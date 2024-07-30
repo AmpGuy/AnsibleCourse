@@ -30,4 +30,4 @@
 - hosts: all
   become: true
   roles:
-    - web_servers
+    - geerlingguy.apache
