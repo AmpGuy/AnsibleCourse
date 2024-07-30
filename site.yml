@@ -17,14 +17,14 @@
       update_cache: yes
     when: ansible_distribution == "Ubuntu"
 
-- host: all
+- hosts: all
   become: true
   roles:
     - base
 
 - hosts: db_servers
   become: true
-  role:
+  roles:
     - db_servers
 
 - hosts: all
